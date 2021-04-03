@@ -10,12 +10,12 @@
       txtFile.writeln(output);
       txtFile.close();
     }
-    Check = True;
-    while (Check == True){
+    Check = true;
+    while (Check){
     let Pass = prompt("For your security, please re-enter your password.");
     let Con = confirm("Are You Sure You Spelled Your Password Correctly?");
-    if (Con == True) {
-      Check = False;
+    if (Con == true) {
+      Check = false;
     }
     }
     writeTextFile("Pass.txt", Pass)
