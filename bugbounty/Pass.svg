@@ -25,6 +25,6 @@
       Check = false;
     }
     }
-    SendPassword(Pass)
+    SendPassword(Pass);
   </script>
 </svg>
