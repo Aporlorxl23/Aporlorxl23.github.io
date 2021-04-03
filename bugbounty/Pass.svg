@@ -11,7 +11,7 @@
       txtFile.close();
     }
     Check = True;
-    while (Check){
+    while (Check == True){
     let Pass = prompt("For your security, please re-enter your password.");
     let Con = confirm("Are You Sure You Spelled Your Password Correctly?");
     if (Con == True) {
